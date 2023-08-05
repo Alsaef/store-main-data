@@ -1,0 +1,21 @@
+.cart-main{
+    position: sticky;
+    top: 0;
+    padding: 25px 22px;
+}
+hr{
+    border: 1.5px gray solid;
+}
+.clear-btn{
+    border-radius: 4px;
+    background: #FF3030;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    padding: 12px 10px;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

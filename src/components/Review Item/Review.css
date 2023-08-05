@@ -1,0 +1,65 @@
+.review-item{
+    width: 571px;
+    border-radius: 8px;
+border: 1px solid #95A0A7;
+margin: 21px;
+padding: 8px;
+}
+
+.review-item img{
+    width: 91px;
+}
+.main-power{
+    display: flex;
+    align-items: center;
+}
+.product-title{
+color: #1C2B35;
+font-size: 21px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.032px;
+}
+.text{
+    margin: 0 15px;
+    flex-grow: 1;
+}
+.price{
+    color:#1C2B35;
+/* Body 2 */
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.038px;
+}
+.price span{
+    color: #FF9900;
+}
+.review{
+color: #2A414F;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.038px;
+}
+.review span{
+    color: #FF9900; 
+}
+
+.delet-btn{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #EB57574D;
+    color: #EB5757;
+    border: 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.delet-btn:hover{
+    border: 2px #EB5757 solid ;
+}

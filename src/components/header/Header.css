@@ -1,0 +1,27 @@
+.hearder{
+    background: #1C2B35;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 32px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+ul li a:hover{
+    color: aqua;
+}
