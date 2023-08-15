@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Logo from'../../images/Logo.svg'
 import './Header.css'
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../AuthProvider/AuthProvider';
 const Header = () => {
+    const {user,logOut}=useContext(AuthContext)
+    const singOut=()=>{
+        logOut()
+        .then(() => {
+            // Sign-out successful.
+          }).catch((error) => {
+            console.log(error.message)
+          });
+    }
     return (
         <div>
           <header>
@@ -15,7 +25,11 @@ const Header = () => {
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/orders">Order</Link></li>
                         <li><Link to="*">Order Review</Link></li>
-                        <li><Link to="/login">Login</Link></li>
+                        {
+                            user ?
+                              <div><span>{user.email} </span> <button onClick={singOut}>LogOut</button></div>:
+                             <button> <Link to="/login">Login</Link></button>
+                        }
                     </ul>
                 </div>
              </nav>

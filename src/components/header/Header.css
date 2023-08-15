@@ -25,3 +25,15 @@ ul li a{
 ul li a:hover{
     color: aqua;
 }
+
+header span{
+    color: white;
+    padding-left: 10px;
+}
+header button{
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
